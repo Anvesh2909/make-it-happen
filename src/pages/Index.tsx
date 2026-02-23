@@ -1,13 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import ChallengeSection from "@/components/ChallengeSection";
+import SolutionSection from "@/components/SolutionSection";
+import ObjectivesSection from "@/components/ObjectivesSection";
+import TeamSection from "@/components/TeamSection";
+import ImpactSection from "@/components/ImpactSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="bg-background min-h-screen">
+      <HeroSection />
+      <ChallengeSection />
+      <SolutionSection />
+      <ObjectivesSection />
+      <TeamSection />
+      <ImpactSection />
+    </main>
   );
 };
 
