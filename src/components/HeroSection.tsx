@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Zap } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -66,10 +69,23 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          className="mt-10"
+        >
+          <Link to="/analyze">
+            <Button size="lg" className="gap-2 font-mono text-base shadow-glow">
+              <Zap className="w-5 h-5" /> Try the Analyzer
+            </Button>
+          </Link>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 1 }}
-          className="mt-20 animate-float"
+          className="mt-12 animate-float"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="mx-auto text-muted-foreground">
             <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
