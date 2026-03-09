@@ -2,8 +2,7 @@ import { motion } from "framer-motion";
 
 const team = [
   { name: "Bharath Chepuri", id: "2300031558" },
-  { name: "Mokam Reddy", id: "2300032813" },
-  { name: "Anvesh Yadav", id: "" },
+  { name: "Anvesh Yadav", id: "2300032813" },
   { name: "Shaik Salman", id: "2300032987" },
   { name: "E Praveen", id: "2300033269" },
 ];
